@@ -109,12 +109,26 @@
 }
 
 .scrolledTo {
-    animation: slideIn 1s;
+    animation: slideIn 0.8s;
+}
+
+.scrolledToR {
+    animation: slideInR 0.8s;
 }
 
 @keyframes slideIn {
     from {
         transform: translateX(-800px)
+    }
+    
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes slideInR {
+    from {
+        transform: translateX(800px)
     }
     
     to {
