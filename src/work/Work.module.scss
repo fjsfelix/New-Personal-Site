@@ -1,0 +1,196 @@
+@import '../global.scss';
+
+
+.workContianer {
+    width: 100%;
+    background-color: $primary;
+}
+.workContianerInner {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.workTitle {
+    color: $dark;
+    margin: 0 0 80px 0;
+    text-align: center;
+}
+
+
+.timeLineItemContianer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    
+} 
+
+.timeLineItemContianerR {
+    flex-direction: row-reverse;
+}
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: $primary;
+    border: 2px solid $dark;
+    border-radius: 100%;
+    top: 130px;
+    left: calc(50% - 11px) ; 
+    z-index: 3;
+}
+.timeLineLeft {
+    // width: 400px;
+    width: 50%;
+    height: 280px;
+    border-right: 2px solid $dark;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.timeLineLeftR {
+    justify-content: flex-start;
+    border-right: none;
+}
+
+.companyBox {
+    // width: calc(100% - 30px);
+    width: 460px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border-radius: 0 10px 10px 0;
+    border-radius: 10px;
+    transition: 0.1s;
+    margin: 0 30px 0 0;
+    position: relative;
+    &:hover{
+        cursor: pointer;
+        height: 245px;
+    }
+    &:hover .moreInfo { 
+        height: 40px;
+       
+    }
+    .logo {
+        // transition: 0.1s;
+        width: 250px;
+        // margin: 0 60px 0 0;
+    }
+
+}
+.companyBoxR {
+    margin: 0 0 0 30px;
+    // border-radius: 10px 0 0 10px;
+    // justify-content: flex-start;
+    // .logo {
+    //     margin: 0 0 0 60px;
+    // }
+}
+
+
+.moreInfo {
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: $primary;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.1s;
+
+        margin: 0;
+
+}
+
+.scrolledTo {
+    animation: slideIn 1s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-800px)
+    }
+    
+    to {
+        transform: translateX(0)
+    }
+}
+
+
+.timeLineRight {
+    width: 50%;
+    color: $primary;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: $dark;
+    h4 {
+        margin: 0 0 10px 0;
+        font-weight: 400;
+        font-size: 18px;
+        height: 22px;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    h3 {
+        margin: 0 0 10px 0;
+        font-weight: 400;
+        font-size: 30px;
+        transition: 0.5s;
+    }
+    h5 {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        transition: 0.5s;
+    }
+}
+
+.timeLineRightR {
+    padding-right: 30px;
+    border-right: 2px solid $dark;
+    align-items: flex-end;
+    text-align: right;
+   
+}
+
+.timeLineRightOpen {
+    h4 {
+        height: 0px;
+        margin: 0;
+    }
+    h3 {
+        margin: 0 0 5px 0;
+        font-size: 20px;
+    }
+    h5 {
+        margin: 0 0 5px 0;
+        font-size: 12px;
+    }
+}
+
+.infoBox {
+    overflow: hidden;
+    max-width: 700px;
+    transition: 0.5s;
+    p {
+        // font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        margin: 10px 0 0 0;
+    }
+}
+
+.infoBoxClosed {
+    height: 0px;
+}
+.infoBoxOpen {
+    height: 200px;
+}

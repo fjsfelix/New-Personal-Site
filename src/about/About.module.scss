@@ -1,0 +1,50 @@
+@import '../global.scss';
+
+
+.aboutContianer {
+    width: 100%;
+    background-color: #F0F0F0;
+}
+.aboutContianerInner {
+    padding: 100px 0 60px 0;
+}
+
+.aboutInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutItem {
+    margin: 50px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aboutItemText {
+    margin-left: 50px;
+    h3 {
+        font-size: 30px;
+        margin: 0 0 15px 0;
+        font-weight: 300;
+    }
+    h4 {
+        font-size: 20px;
+        margin: 0;
+        font-weight: 300;
+    }
+}
+.iconContainer {
+    width: 90px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facePhoto {
+    margin-top: 130px;
+    height: 350px;
+    margin-left: 150px;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="61px" viewBox="0 0 72 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-28.000000, -1296.000000)">
+            <g id="Group-3" transform="translate(28.000000, 1296.000000)">
+                <rect id="Rectangle" stroke="#2B2B2B" stroke-width="3" x="1.5" y="1.5" width="69" height="58" rx="7"></rect>
+                <path d="M2.59649123,18.5 L69.4035088,18.5" id="Line-2" stroke="#2B2B2B" stroke-width="3" stroke-linecap="square"></path>
+                <circle id="Oval" fill="#2B2B2B" cx="11" cy="11" r="4"></circle>
+                <circle id="Oval" fill="#2B2B2B" cx="23" cy="11" r="4"></circle>
+                <circle id="Oval" fill="#2B2B2B" cx="35" cy="11" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

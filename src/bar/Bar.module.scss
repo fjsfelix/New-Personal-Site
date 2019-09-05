@@ -1,0 +1,49 @@
+@import '../global.scss';
+
+
+
+
+.barContianer {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    transition: 0.5s;
+    // background: #2f2f2f;
+}
+.barContianerInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+}
+.logo{
+    color: $primary;
+    padding: 8px 16px;
+    background-color: #DC4479;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.barRight {
+    a {
+        color: $primary;
+        text-decoration: none;
+        margin-left: 40px;
+        font-size: 20px;
+        transition: color 0.5s;
+    }
+}
+
+.coloredBar {
+    background-color: $primary;
+    -webkit-box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.35);
+
+    .barRight {
+        a {
+            color: #2f2f2f !important;
+        }
+    }
+}
