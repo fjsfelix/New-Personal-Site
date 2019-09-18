@@ -13,5 +13,33 @@
     img {
         height: 40px;
     }
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 500;
+        color: $dark;
+        // border: 2px solid $primary;
+        padding: 10px 30px;
+        height: 100%;
+        border-bottom: 3px solid $primary;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+  
+            border-bottom: 3px solid $blue
+         
+        }
+    }
+    .resume {
+        margin-left: 10px;
+        font-size: 33px;
 
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .logoBarContianer {
+        display: none;
+    }
 }

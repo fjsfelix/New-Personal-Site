@@ -6,6 +6,9 @@ import Bar from './bar/Bar'
 import LogoBar from './logoBar/LogoBar'
 import About from './about/About'
 import Work from './work/Work'
+import Education from './education/Education'
+import Projects from './projects/Projects'
+import Contact from './contact/Contact'
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
      <LogoBar/>
      <About/>
      <Work />
+     <Education/>
+     <Projects/>
+     <Contact/>
    </div>
   );
 }

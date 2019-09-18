@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700||Playfair+Display&display=swap');
 
-$primary: #F7F7F7;
+$primary: #F6F6F6;
+$secondary: #F0F0F0;;
 $dark: #2B2B2B;
+$blue: #073B7F;
 
 
 .container {
-    max-width: 1440px;
+    max-width: 1080px;
     width: 90%;
     margin: 0 auto;
 }
@@ -15,4 +17,15 @@ $dark: #2B2B2B;
     margin: 0;
     font-size: 70px;
     font-weight: 300;
+    color: $blue;
+    span {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .sectionTitle {
+        font-size: 60px;
+    }
+    
 }

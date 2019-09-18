@@ -1,0 +1,259 @@
+@import '../global.scss';
+
+
+.projfullContianer {
+  width: 100%;
+  padding: 120px 0;
+  background-color: $primary;
+}
+
+.projectsTitle {
+  text-align: center;
+  margin: 0 0 80px 0;
+}
+
+.projContainer {
+  width: 420px;
+  height: 720px;
+  border-radius: 12px;
+  position: relative;
+  margin: 30px 15px;
+  border: 2px solid $primary;
+  transition: 0.3s;
+  overflow: hidden;
+  &:hover {
+    border: 2px solid $dark;
+  } 
+  &:hover .arrowContianer{
+    width: 98px;
+  }
+  .goContaier {
+    border-radius: 5px 5px 0 0;
+    font-size: 25px;
+    transition: 0.5s;
+    background-color:rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: $primary;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+}
+
+.tagContainer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+.tag {
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 30px;
+  color: $primary;
+  margin: 10px 10px 0 0;
+  display: inline-block;
+}
+
+.projectBoxContianer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+    color: $dark;
+  }
+}
+
+.arrowContianer {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 38px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: 0.4s;
+  overflow: hidden;
+  img {
+    width: 20px;
+    margin-right: 9px;
+  }
+  .arrowVisit {
+    color: $primary;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 12px 0 0;
+  }
+}
+
+.projectTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+  .projectName {
+    font-size: 30px;
+    display: inline;
+    font-weight: 400;
+    margin: 0;
+  }
+  .projectLogo {
+    display: inline-block;
+    height: 30px;
+    margin-right: 5px;
+
+  }
+}
+
+.projectLogoDT {
+  width: 32px;
+  height: 32px;
+  background-color: #FF4E50;
+  position: relative;
+  margin-right: 5px;
+  p {
+    color: $primary;
+    font-size: 12px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    margin: 0;
+  }
+}
+
+.projectDesc {
+  max-width: 300px;
+  width: 80%;
+  text-align: center;
+  font-size: 14px;
+  color: $primary;
+}
+
+.projectDescDark {
+  color: $dark;
+}
+
+
+.windowedContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  .windowedContent {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .windowedWindow {
+      width: 260px;
+      .topBar {
+        width: 100%;
+        height:20px;
+        background-color: $primary;
+        border-radius: 5px 5px 0 0;
+        display: flex;
+        align-items: center;
+        padding-left: 3px;
+        .circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          margin: 0 3px;
+        }
+      }
+      .screenShot {
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+      }
+    }
+
+   
+  }
+  h4 {
+    font-size: 18px;
+    margin: 5px 0 22px 0;
+  }
+  .trapezoid {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+  }
+}
+
+.dtContainer {
+  color: $primary;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .dtScreens {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    .dtPhone {
+      height: 100%;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .dtDesktopContainer {
+      height: 100%;
+      width: 58%;
+      display: inline-block;
+      overflow: hidden;
+    }
+    .dtDesktop {
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+  .starLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 0 0 0;
+    img {
+      height: 28px;
+      margin-right: 8px;
+    }
+  }
+  h4 {
+    font-size: 25px;
+    color: $primary;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.marvelIMG {
+  width: 80%;
+  margin-top: 60px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+}

@@ -1,21 +1,34 @@
 @import '../global.scss';
 
 
-
-
 .barContianer {
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 20;
     width: 100%;
     transition: 0.5s;
     // background: #2f2f2f;
 }
 .barContianerInner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 70px;
+    a {
+        color: $primary;
+        text-decoration: none;
+        padding: 0 20px;
+        font-size: 23px;
+        transition: color 0.5s;
+        height: 100%;
+        border-bottom: 3px solid rgba(0,0,0,0);
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        &:hover {
+            border-bottom: 3px solid $primary;
+        }
+    }
 
 }
 .logo{
@@ -26,24 +39,27 @@
     font-style: italic;
 }
 
-.barRight {
-    a {
-        color: $primary;
-        text-decoration: none;
-        margin-left: 40px;
-        font-size: 20px;
-        transition: color 0.5s;
-    }
-}
+
 
 .coloredBar {
     background-color: $primary;
     -webkit-box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.35);
     box-shadow: 0 -1px 6px 0 rgba(0, 0, 0, 0.35);
 
-    .barRight {
-        a {
-            color: #2f2f2f !important;
+    a {
+        color: #2f2f2f !important;
+        &:hover {
+            border-bottom: 3px solid $blue;
         }
+        &.active {
+            border-bottom: 3px solid $blue;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .barContianer {
+        display: none;
     }
 }

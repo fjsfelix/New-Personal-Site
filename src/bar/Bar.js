@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Bar.module.scss'
-
+import { Link } from 'react-scroll'
 
 
 class Bar extends React.Component {
@@ -41,15 +41,11 @@ class Bar extends React.Component {
       <div className={`${styles.barContianer} ${this.barColor()}`}>
         <div className={styles.container}>
           <div className={styles.barContianerInner}>
-            <div className={styles.logo}>
-              FS
-            </div>
-            <div className={styles.barRight}>
-              <a href="#">About</a>
-              <a href="#">Work</a>
-              <a href="#">Projects</a>
-              <a href="#">Contact</a>
-            </div>
+              <Link className={styles.link} smooth={true} duration={500} to="about" >About</Link>
+              <Link className={styles.link} smooth={true} duration={500} to="work">Work</Link>
+              <Link className={styles.link} smooth={true} duration={500} to="education">Education</Link>
+              <Link className={styles.link} smooth={true} duration={500} to="projects">Projects</Link>
+              <Link className={styles.link} smooth={true} duration={500} to="contact">Contact</Link>
           </div>
          </div>
       </div>
