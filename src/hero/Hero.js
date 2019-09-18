@@ -12,7 +12,6 @@ function Hero() {
   return (
     <div className={styles.heroContainer}>
       <div className={styles.heroBG}></div>
-      
       <div className={styles.heroFront}>
         <div className={`${styles.container} ${styles.heroText}`}>
           <div className={styles.name}>
