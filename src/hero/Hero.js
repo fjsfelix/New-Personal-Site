@@ -3,8 +3,9 @@ import styles from './Hero.module.scss'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faFilePdf, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { faCopyright, faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import resume from '../felix-sun-resume.pdf'
 
 
 function Hero() {
@@ -41,7 +42,7 @@ function Hero() {
             <a className={styles.contactBtn} href='mailto:fs.felix.sun@gmail.com'>
               <FontAwesomeIcon icon={faEnvelope} />
             </a>
-            <a className={styles.contactBtn}>
+            <a className={styles.contactBtn} href={resume}  target='_blank'>
               <FontAwesomeIcon icon={faFilePdf} />
             </a>
             <a className={styles.contactBtn} href="https://github.com/fjsfelix" target='_blank'>

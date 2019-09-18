@@ -5,6 +5,7 @@ import linkedInIMG from './linked.png'
 import instaImg from './insta.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import resume from '../felix-sun-resume.pdf'
 
 
 function LogoBar() {
@@ -12,7 +13,7 @@ function LogoBar() {
     <div className={styles.logoBarContianer}>
       <div className={styles.container}>
         <div className={styles.logoBarContianerInner}>
-          <a href="#" target='_blank'>
+          <a href={resume} target='_blank'>
             <FontAwesomeIcon icon={faFilePdf} />
             <span className={styles.resume}>
               Resume

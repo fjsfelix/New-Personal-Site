@@ -3,8 +3,9 @@ import styles from './Contact.module.scss'
 import {Element} from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faFilePdf, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { faCopyright, faEnvelope} from '@fortawesome/free-regular-svg-icons'
+import resume from '../felix-sun-resume.pdf'
 
 
 function Contact() {
@@ -18,7 +19,7 @@ function Contact() {
               <FontAwesomeIcon icon={faGithub} />
               <span>GitHub</span>
             </a>
-            <a className={styles.contactLink}>
+            <a className={styles.contactLink} href={resume} target='_blank'>
               <FontAwesomeIcon icon={faFilePdf} />
               <span>Resume</span>
             </a>
