@@ -18,7 +18,7 @@
 }
 
 body {
-    background: url(./hero.jpg) no-repeat center center fixed;
+    background: url('./hero.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -209,7 +209,7 @@ body {
         }
     }
     body {
-        background: url(./hero-mobile.png) no-repeat center center fixed;
+        background: url('./hero-mobile.png') no-repeat center center fixed;
     }
     .sectionLinks {
         z-index: 50;
