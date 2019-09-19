@@ -6,12 +6,15 @@ import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import resume from '../felix-sun-resume.pdf'
+import heroMobile from './hero-mobile.png'
 
 
 function Hero() {
   return (
     <div className={styles.heroContainer}>
-      <div className={styles.heroBG}></div>
+      <div className={styles.heroBG}>
+        <img  src={heroMobile}/>
+      </div>
       <div className={styles.heroFront}>
         <div className={`${styles.container} ${styles.heroText}`}>
           <div className={styles.name}>
