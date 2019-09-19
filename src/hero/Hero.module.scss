@@ -191,6 +191,7 @@ body {
     font-size: 20px;
     transform: translateY(100px);
     animation: emailUp 1s 2s forwards;
+    opacity: 0;
     .email {
         color: $primary;
         display: flex;
@@ -293,13 +294,14 @@ body {
     }
 
     .heroText {
+        margin-bottom: 100px;
         .description {
             width: auto;
             flex-direction: column;
             align-items: center;
             h2 {
-                font-size: 23px;
-                margin-bottom: 15px;
+                font-size: 22px;
+                margin-bottom: 12px;
             }
         }
     }
@@ -330,7 +332,7 @@ body {
     }
 
     .emailContainer {
-        bottom: 80px;
+        bottom: 130px;
         transform: translateY(100px);
         animation: emailUp 1s 2s forwards;
         .email {
