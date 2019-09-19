@@ -16,10 +16,18 @@ function Hero() {
         <img  src={heroMobile}/>
       </div>
       <div className={styles.heroFront}>
-        <div className={`${styles.container} ${styles.heroText}`}>
-          <div className={styles.name}>
+        <div className={` ${styles.heroText}`}>
+          {/* <div className={styles.name}>
             <h1>Felix Sun</h1>
+          </div> */}
+          <div className={styles.crossContainer}>
+            <div className={styles.crossName}>
+              <div className={styles.cross1}></div>
+              <h1 className={styles.crossName} >Felix Sun</h1>
+              <div className={styles.cross2}></div>
+            </div>
           </div>
+
           <div className={styles.description}>
             <h2>Software Engineer</h2>
             <h2>Designer</h2>
@@ -35,16 +43,13 @@ function Hero() {
 
           <div className={styles.emailContainer}>
             <a className={styles.email} href='mailto:fs.felix.sun@gmail.com'>
-              <FontAwesomeIcon icon={faEnvelope} className={styles.emailLogo}/>fs.felix.sun@gmail.com
+              <FontAwesomeIcon icon={faEnvelope} className={styles.emailLogo}/><span className={styles.emailText}>fs.felix.sun@gmail.com</span>
             </a>
           </div>
 
           
           <div className={styles.contactBar}>
-            <a className={styles.contactBtn} href='mailto:fs.felix.sun@gmail.com'>
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-            <a className={styles.contactBtn} href={resume}  target='_blank'>
+            <a className={styles.contactBtn} href={resume}  target='_blank' style={{fontSize: '27px'}}>
               <FontAwesomeIcon icon={faFilePdf} />
             </a>
             <a className={styles.contactBtn} href="https://github.com/fjsfelix" target='_blank'>

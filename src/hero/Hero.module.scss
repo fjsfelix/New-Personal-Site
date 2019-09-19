@@ -1,6 +1,75 @@
 @import '../global.scss';
 
 
+.crossContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 180px;
+    .crossName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 0px;
+        height: 0px;
+        animation: cross 1s 0.7s forwards;
+        .cross1 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            top: 0;
+            left: 0;
+            border-top: 6px solid $primary;
+            border-left: 6px solid $primary;
+            animation: crossFinish 0.6s ease-out 1.7s forwards;
+        }
+        .cross2 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            bottom: 0;
+            right: 0;
+            border-bottom: 6px solid $primary;
+            border-right: 6px solid $primary;
+            animation: crossFinish 0.6s ease-out 1.7s forwards;
+        }
+        .crossName {
+            font-size: 100px;
+            font-weight: 400;
+            color: $primary;
+        }
+    }
+}
+
+
+@keyframes cross {
+    from {
+        width: 0px;
+        height: 0px;
+    }
+  
+    to {
+        width: 655px;
+        height: 200px;
+    }
+}
+
+@keyframes crossFinish {
+    from {
+        width: 50px;
+        // height: 40px;
+    }
+  
+    to {
+        width: 655px;
+        // height: 60px;
+    }
+}
+
+
 .heroContainer {
     height: 100vh;
 }
@@ -35,8 +104,11 @@ body {
 
 .heroText {
     color: $primary;
-    margin-bottom: 70px;
-    width: 770px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .name {
         width: 100%;
         display: flex;
@@ -49,8 +121,15 @@ body {
     .description {
         width: 100%;
         display: flex;
+        width: 655px;
         justify-content: space-between;
         animation: riseup 1s;
+        h2{
+            margin: 0;
+            font-size:28px;
+            font-weight: 400;
+            display: inline;
+        }
     }
     h1 {
         font-size: 84px;
@@ -89,37 +168,10 @@ body {
         from { width: 0 }
         to { width: 400px; }
     }
-    h2{
-        margin: 0;
-        font-size: 33px;
-        font-weight: 400;
-        display: inline;
-    }
+
 
 }
 
-@media only screen and (max-width: 1000px) {
-    .heroText {
-        max-width: 550px;
-        width: 80%;
-        h1 {
-            font-size: 50px;
-            width: 238px;
-            animation: typing1000 1s steps(30, end);
-        }
-        .name { 
-            border: 4px solid $primary;
-        } 
-        h2{
-            font-size: 20px;
-        }
-        @keyframes typing1000 {
-            from { width: 0 }
-            to { width: 238px; }
-        }
-
-    }
-}
 .sectionLinks {
     display: none;
 }
@@ -137,6 +189,8 @@ body {
     justify-content: center;
     padding: 20px 10px;
     font-size: 20px;
+    transform: translateY(100px);
+    animation: emailUp 1s 2s forwards;
     .email {
         color: $primary;
         display: flex;
@@ -145,17 +199,50 @@ body {
         border-radius: 50px;
         border: 2px solid rgba(0,0,0,0);
         transition: 0.2s;
+
         .emailLogo {
             font-size: 28px;
-            margin-right: 5px;
+            
         }
         font-size: 25px;
         &:hover {
             border: 2px solid $primary;
 
         }
+        .emailText {
+            width: 0;
+            overflow: hidden;
+            animation: emailExpand 0.8s 3s forwards;
+        }
+    }
+    
+}
+
+@keyframes emailUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+  
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
+@keyframes emailExpand {
+    from {
+        width: 0;
+        padding-left: 0;
+    }
+  
+    to {
+        width: 320px;
+        padding-left: 10px;
+    }
+}
+
+
+
 @media only screen and (max-width: 1000px) {
     .contactBar {
         z-index: 50;
@@ -178,9 +265,104 @@ body {
             align-items: center;
         }
     }
-    .emailContainer {
-        display: none;
+
+    .crossContainer {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 30px;
+        .crossName {
+            animation: cross 1s 0.7s forwards;
+            .cross1 {
+                width: 30px;
+                height: 30px;
+                border-top: 3px solid $primary;
+                border-left: 3px solid $primary;
+                animation: crossFinish 0.6s ease-out 1.7s forwards;
+            }
+            .cross2 {
+                width: 30px;
+                height: 30px;
+                border-bottom: 3px solid $primary;
+                border-right: 3px solid $primary;
+                animation: crossFinish 0.6s ease-out 1.7s forwards;
+            }
+            .crossName {
+                font-size: 48px;
+            }
+        }
     }
+
+    .heroText {
+        .description {
+            width: auto;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                font-size: 23px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+
+    @keyframes cross {
+        from {
+            width: 0px;
+            height: 0px;
+        }
+      
+        to {
+            width: 300px;
+            height: 120px;
+        }
+    }
+    
+    @keyframes crossFinish {
+        from {
+            width: 50px;
+            // height: 40px;
+        }
+      
+        to {
+            width: 300px;
+            // height: 60px;
+        }
+    }
+
+    .emailContainer {
+        bottom: 80px;
+        transform: translateY(100px);
+        animation: emailUp 1s 2s forwards;
+        .email {
+            padding: 0;
+            border: none;
+            font-size: 18px;
+            .emailLogo {
+                font-size: 18px;
+            }
+            &:hover {
+                border: none;
+            }
+            .emailText {
+                width: 0;
+                overflow: hidden;
+                animation: emailExpand 0.8s 3s forwards;
+            }
+        }
+        
+    }
+    @keyframes emailExpand {
+        from {
+            width: 0;
+            padding-left: 0;
+        }
+      
+        to {
+            width: 215px;
+            padding-left: 5px;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -195,28 +377,7 @@ body {
             height:  1078px;
         }
     }
-    .heroText {
-        .description {
-            flex-direction: column;
-            align-items: center;
-        }
 
-        h1 {
-            font-size: 45px;
-            width: auto;
-            animation: none;
-        }
-        h2 {
-            margin-top: 22px;
-        }
-        @keyframes typing600 {
-            from { width: 0 }
-            to { width: 214px; }
-        }
-    }
-    body {
-        // background: url('./hero-mobile.png') no-repeat center center fixed;
-    }
     .sectionLinks {
         z-index: 50;
         display: flex;
